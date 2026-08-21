@@ -1,0 +1,22 @@
+name: xgd-urdf-studio
+
+services:
+  urdf-studio:
+    image: ${URDF_STUDIO_IMAGE:-xgd-urdf-studio:dev}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${URDF_STUDIO_CONTAINER_NAME:-urdf-studio}
+    restart: unless-stopped
+    ports:
+      - '${URDF_STUDIO_BIND_ADDRESS:-0.0.0.0}:${URDF_STUDIO_HTTPS_PORT:-8320}:8443'
+    volumes:
+      - type: bind
+        source: ${URDF_STUDIO_TLS_CERT_PATH:-./.dev-certs/tls.crt}
+        target: /etc/nginx/tls/tls.crt
+        read_only: true
+      - type: bind
+        source: ${URDF_STUDIO_TLS_KEY_PATH:-./.dev-certs/tls.key}
+        target: /etc/nginx/tls/tls.key
+        read_only: true
+    stop_grace_period: 10s

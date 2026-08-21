@@ -137,6 +137,7 @@
     "test:e2e:import-export": "node scripts/test/e2e/test_import_export.mjs",
     "test:e2e:editor": "node scripts/test/e2e/test_editor_operations.mjs",
     "test:e2e:all": "npm run test:e2e:assembly && npm run test:e2e:import-export && npm run test:e2e:editor",
+    "test:deployment:https": "node scripts/test/deployment/verify_https_deployment.mjs",
     "dev:with-generate": "npm run generate && npm run dev",
     "postinstall": "patch-package"
   },
