@@ -397,7 +397,7 @@ export async function buildRuntimeRobotFromState({
   // tree traversal and set material.needsUpdate = true (GPU jank).
   if (parseVisual) {
     const texturePaths = new Set<string>();
-    for (const [linkId, linkData] of Object.entries(links)) {
+    for (const linkData of Object.values(links)) {
       const visualEntries = getVisualGeometryEntries(linkData);
       for (const entry of visualEntries) {
         const geometry = entry.geometry;

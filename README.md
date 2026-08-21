@@ -325,6 +325,8 @@ Validation is typically done through:
 - [AI Features Guide](./docs/ai-features.md)
 - [Testing Guide](./docs/testing.md)
 - [WASM Build Guide](./docs/wasm-build.md)
+- [Docker & HTTPS Deployment](./docs/deployment.md)
+- [XGD Upstream Baseline](./docs/upstream-baseline.md)
 - [Update Rules & Verification](./docs/update-rules.md)
 - [Robot Canvas Library](./docs/robot-canvas-lib.md)
 - [Documentation Catalog](./docs/CATALOG.md)

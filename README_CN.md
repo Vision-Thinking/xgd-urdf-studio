@@ -319,6 +319,8 @@ Node 测试入口统一收敛在 `scripts/test/runner/run-node-tests.mjs`。单�
 - [AI 功能指南](./docs/ai-features.md)
 - [测试指南](./docs/testing.md)
 - [WASM 构建指南](./docs/wasm-build.md)
+- [Docker 与 HTTPS 部署](./docs/deployment.md)
+- [XGD 上游基线](./docs/upstream-baseline.md)
 - [更新规则与验证](./docs/update-rules.md)
 - [Robot Canvas 库说明](./docs/robot-canvas-lib.md)
 - [完整文档索引](./docs/CATALOG.md)

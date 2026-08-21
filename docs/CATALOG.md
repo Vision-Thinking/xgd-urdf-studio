@@ -1,6 +1,6 @@
 # 文档索引
 
-> 最后更新：2026-07-31
+> 最后更新：2026-08-21
 
 主入口：[CLAUDE.md](../CLAUDE.md)（项目定位、目录结构、架构红线、Store 表、常用命令、测试分层、文档导航）
 
@@ -16,6 +16,8 @@
 | [ai-features.md](ai-features.md)           | AI 助手：环境变量、审阅标准路径、skill-first 路由                           | 53  |
 | [architecture.md](architecture.md)         | 架构补充：例外清单、canonical ownership、设计哲学、内存约束、检查命令       | 158 |
 | [testing.md](testing.md)                   | 测试指南：三层测试金字塔、命令入口、新增测试落点、结果阅读                  | 97  |
+| [deployment.md](deployment.md)             | XGD 独立 Docker/HTTPS 部署、证书变量、隔离响应头与 USD 验收                 | 114 |
+| [upstream-baseline.md](upstream-baseline.md) | XGD Fork 上游冻结提交、基线验证与后续同步原则                              | 32  |
 | [update-rules.md](update-rules.md)         | 变更工作流：验收清单、增量命令、测试样本索引、浏览器验证、文档更新映射      | 164 |
 | [robot-canvas-lib.md](robot-canvas-lib.md) | 对外库说明：RobotCanvas API、发布流程、后续拆分建议                         | 85  |
 | [assembly-single-source-refactor.md](assembly-single-source-refactor.md) | Assembly 单一可变模型端到端重构：硬切换边界、阶段与验收                    | 296 |
